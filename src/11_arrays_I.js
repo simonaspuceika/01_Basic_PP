@@ -19,6 +19,24 @@
 // // console.log(arr[5]);
 // // console.log(arr[arr.length-1]); // letzte Pos. / allgemein
 
+/* 02a. Theorie: Schleifen (for-schleife) */
+/* For -Schleifen als allg. Wiederholungs-Struktur */
+
+// Inkrement (untere Grenze --> obere Grenze)
+// for (let i = 5; i <= 10 ; i++) {
+//     output("index :" + i);  // i --> Schleifen-Index
+// }
+
+// Dekrement (obere Grenze --> untere Grenze)
+// for (let i = 10; i >= 0; i--) {  // i --> Schleifen-Index
+//      output("index :" + i);
+// }
+
+// Inkrement (untere Grenze --> obere Grenze)
+// for (let i = 0; i <= 100 ; i+= 10) {
+//     output("index :" + i);  // i --> Schleifen-Index
+// }
+
 
 
 
@@ -57,24 +75,24 @@ function output(outputStr) {
 
 
 
-/*** 01a. Funktionalität mit Array 1 */
-// Kritik | Überlegung
-// word1,word2, .... wordN :: Semantische Struktur
-// arr[0],arr[1] ... arr[n-1] :: Numerische Struktur (0,1,2,3 ... n)
-// --> Transformation: semantisches Problem --> numerisches Problem
-output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
+// /*** 01a. Funktionalität mit Array 1 */
+// // Kritik | Überlegung
+// // word1,word2, .... wordN :: Semantische Struktur
+// // arr[0],arr[1] ... arr[n-1] :: Numerische Struktur (0,1,2,3 ... n)
+// // --> Transformation: semantisches Problem --> numerisches Problem
+// output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
 
-function getSentenceArr(arr) {
-    const GAP = " ";
-    const PUNCT = ".";
-    let str =   arr[0] + GAP +
-                arr[1] + GAP +
-                arr[2] + GAP +
-                arr[3] + GAP +
-                arr[4] + GAP +
-                arr[5] +
-                PUNCT;
+// function getSentenceArr(arr) {
+//     const GAP = " ";
+//     const PUNCT = ".";
+//     let str =   arr[0] + GAP +
+//                 arr[1] + GAP +
+//                 arr[2] + GAP +
+//                 arr[3] + GAP +
+//                 arr[4] + GAP +
+//                 arr[5] +
+//                 PUNCT;
 
-    return str;
-}
+//     return str;
+// }
 
